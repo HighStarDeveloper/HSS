@@ -1,0 +1,90 @@
+<ion-view view-title="Physicians">
+  <ion-content class="viewcontentforios">
+    <ion-list>
+  <ion-item style="border-color: transparent;">
+     <div class="physiciansdetailsHeding" style="font-size: larger;">{{physiciansdetails.FullName || ""}}</div>
+      <div><img ng-src={{physiciansdetails.ProfileImageURL}} width="120px" ></div>
+      <div class="physiciansdetailsHeding">{{'Specialty'}}</div>
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.Specialty}}</div>
+      <!-- <div class="physiciansdetailsHeding">{{'SubSpecialty'}}</div>
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.SubSpeciality || ""}}</div> -->
+
+      <div class="physiciansdetailsHeding">{{'Appointments'}}</div>
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.Appointments || ""}}</div>
+
+      <div class="physiciansdetailsHeding">{{'Special Expertise'}}</div>
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.SpecialExpertise || ""}}</div>
+
+      <div class="physiciansdetailsHeding">{{'Insurances Accepted'}}</div>
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.InsurancesAccepted || ""}}</div>
+      </ion-item>
+      <div style="padding-left: 12px;">
+      <div class="physiciansdetailsHeding">{{'Office Location'}}</div>
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.Address1 || ""}} </div>
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.Address12 || ""}} </div>
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.City1 || ""}}{{" , "}}{{physiciansdetails.State1 || ""}}</div>
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.Fax1 || ""}} </div>
+    </div>
+      <ion-item class="physicianslistbg" ng-click="openMapApp('location1')" style="margin-top: 5px;">
+        <div style="color: #164469;">
+             <i class="icon ion-ios-location-outline physicianslisticon"></i>
+           {{'See Map and Directions'}}
+            <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+        </div>
+      </ion-item>
+      <div ng-show="physiciansdetails.State2" style="padding-top: 5px;">
+      <div style="padding-left: 12px;">
+      <!-- <div class="physiciansdetailsheadingdetails">{{physiciansdetails.Address21 || ""}} </div>   -->
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.Address21 || ""}} </div>
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.Address22 || ""}} </div>
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.City2 || ""}}{{" , "}}{{physiciansdetails.State2 || ""}} </div>
+      <div class="physiciansdetailsheadingdetails">{{physiciansdetails.Fax2 || ""}} </div>
+     </div>
+      <ion-item class="physicianslistbg" ng-click="openMapApp('location2')" style="margin-top: 5px;">
+        <div style="color: #164469;">
+             <i class="icon ion-ios-location-outline physicianslisticon"></i>
+           {{'See Map and Directions'}}
+            <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+        </div>
+      </ion-item>
+    </div>
+    <div ng-show="physiciansdetails.State3" style="padding-top: 5px;">
+    <div style="padding-left: 12px;">
+    <div class="physiciansdetailsheadingdetails">{{physiciansdetails.Address31 || ""}} </div>
+    <div class="physiciansdetailsheadingdetails">{{physiciansdetails.Address32 || ""}} </div>
+    <div class="physiciansdetailsheadingdetails">{{physiciansdetails.City3 || ""}}{{" , "}}{{physiciansdetails.State3 || ""}} </div>
+    <div class="physiciansdetailsheadingdetails">{{physiciansdetails.Fax3 || ""}} </div>
+    </div>
+    <ion-item class="physicianslistbg" ng-click="openMapApp('location3')" style="margin-top: 5px;">
+      <div style="color: #164469;">
+           <i class="icon ion-ios-location-outline physicianslisticon"></i>
+         {{'See Map and Directions'}}
+          <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+      </div>
+    </ion-item>
+    </div>
+
+      <ion-item class="physicianslistbg" ng-click="openCallview()">
+        <div style="color: #164469;">
+            <i class="icon ion-ios-telephone-outline  physicianslisticon"></i>
+           {{'Call My Office'}}
+           <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+        </div>
+      </ion-item>
+      <ion-item class="physicianslistbg" ng-click="openAddContet()">
+        <div style="color: #164469;">
+            <i class="icon ion-person physicianslisticon"></i>
+           {{'Add to Contacts'}}
+           <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+        </div>
+      </ion-item>
+      <ion-item class="physicianslistbg" ng-click="openFullProfile()">
+        <div style="color: #164469;">
+        <i class="icon ion-plus-round physicianslisticon"></i>
+           {{'View Full Profile'}}
+           <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,35 @@
+<ion-view cache-view="false" view-title="HSS">
+  <ion-content class="footerwrapper" scroll="false">
+    <ion-slide-box auto-play="true" does-continue="true">
+      <ion-slide ng-repeat="item in slidedata">
+              <img ng-src="{{item.content_image}}" width="{{dev_width}}px" height="{{dev_height}}px"/>
+              <div class="row homePageSliderImagesText">
+                  <div class="col">
+                      <div>{{item.cover_image_title}}</div>
+                  </div>
+              </div>
+              <div class="row homePageSliderImagesButtonDiv">
+                    <div class="col">
+                       <button class="homePageSliderImagesButton" ng-click="showImageDetails({{$index}})">{{item.cover_image_link_text}}</button>
+                    </div>
+               </div>
+          </ion-slide>
+    </ion-slide-box>
+    <div class="row" style="padding:0px;margin-top: -5px;">
+      <div class="col col-50 text-center homebutton physicianslistbg" ng-click="physicianEvent()">
+       <span>{{'Find a'}}</span><span style="font-weight: bold;">{{' Physician'}}</span>
+      </div>
+      <div class="col col-50 text-center homebutton physicianslistbg" ng-click="openWebView('https://www.hss.edu/conditions.asp' ,'Conditions',false)">
+       <span>{{'Browse'}}</span><span style="font-weight: bold;">{{' Conditions'}}</span>
+      </div>
+    </div>
+    <div class="row" style="padding:0px">
+      <div class="col col-50 text-center homebutton physicianslistbg" ng-click="locationsearch()">
+       <span>{{'Search'}}</span><span style="font-weight: bold;">{{' Locations'}}</span>
+      </div>
+      <div class="col col-50 text-center homebutton physicianslistbg" ng-click="openWebView('https://www.hss.edu/secure/prs-appointment-request.htm' ,'Request Appointment',false)">
+       <span>{{'Request'}}</span><span style="font-weight: bold;">{{' Appointment'}}</span>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

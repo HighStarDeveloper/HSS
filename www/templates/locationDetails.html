@@ -1,0 +1,51 @@
+<ion-view view-title="Location">
+  <ion-nav-buttons side="right">
+      <button class="button button-clear"  style="color: #1b486c;font-size: 16px;font-weight: 500;" ng-click="openMapApp()">
+          Direction
+      </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+  <ion-item style="border-color: transparent;">
+    <div class="row">
+       <div class="col col-70 text-left wrapping-list" style="margin-left: -10px;">
+          <div class="physiciansdetailsHeding" style="font-size: 13px;">{{selectField.Name || ""}}</div>
+      </div>
+      <div class="col col-30 text-right" style="padding-top: 14px;">
+          <div class="physiciansdetailsheadingdetails" style="font-size: 12px;">{{distance || ""}}</div>
+      </div>
+  </div>
+  </ion-item>
+      <div style="padding: 20px 15px;color: #164469;font-weight: initial;">
+      <div>{{selectField.Address1 || ""}} {{selectField.Address2 || ""}} {{selectField.City1 || ""}}{{","}}{{selectField.State1 || ""}}</div>
+      <div>{{selectField.Zip1 || ""}}</div>
+     </div>
+     <div class="physiciansdetailsheadingdetails" style="padding: 20px 15px;color: #164469;font-weight: initial;">{{selectField.Phone1 || ""}} </div>
+  <div ng-show={{selectField.Description!=""}}>
+    <p style="padding: 12px;font-size: 14px;"> {{selectField.Description}} </p>
+    </div>
+     <ion-item class="physicianslistbg" ng-click="openMapApp()" style="margin-top: 5px;">
+        <div style="color: #164469;">
+             <i class="icon ion-ios-location-outline physicianslisticon"></i>
+           {{'See Map and Directions'}}
+            <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+        </div>
+      </ion-item>
+    </div>
+      <ion-item class="physicianslistbg" ng-click="openCallview()">
+        <div style="color: #164469;">
+            <i class="icon ion-ios-telephone-outline  physicianslisticon"></i>
+           {{'Call This Location'}}
+           <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+        </div>
+      </ion-item>
+      </ion-item>
+      <ion-item class="physicianslistbg" ng-click="openMore()">
+        <div style="color: #164469;">
+          <i class="icon ion-information-circled physicianslisticon"></i>
+           {{'Learn More'}}
+         <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

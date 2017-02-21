@@ -1,0 +1,33 @@
+<ion-view view-title="Location">
+  <ion-content>
+    <div ng-show="!isLocationFound">
+      <div class="row" style="padding-top: 20%;">
+        <div class="col text-center" >
+           <div class="button" style="background-color: #1f4c6f;color: #ffffff;width: 80px;height: 80px;border-radius: 50%;">
+              <div style="padding-top: 20px;"> <i class="icon icon-left ion-ios-search-strong"></i></div>
+          </div>
+
+       </div>
+     </div>
+       <div class="row" style="padding-top: 20px;">
+         <div class="col text-center"  style="font-size: 16px;">
+           <div> {{'Use your current location, or enter a city name or zip code.
+              The locations will sort according to where you are location'}}</div>
+           </div>
+       </div>
+      <div class="row" style="padding-top: 20px;">
+        <div class="col text-center">
+          <button class="button" ng-click="isUserCurrentLocation()" style="background-color: #1f4c6f;height: 30px;width: 229px;color: #ffffff;"> Continue to Location
+          </button>
+     </div>
+    </div>
+  </div>
+
+    <ion-list class="wrapping-list" ng-show="isLocationFound">
+      <ion-item ng-repeat="item in items" class="item-icon-right" ng-click="showListDetails(item)">
+       <div class="physicianslistItemHeding" style="color: #164469;"> {{item}}</div>
+       <i class="icon ion-chevron-right" style="color: #57afcf;font-size: 20px;"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

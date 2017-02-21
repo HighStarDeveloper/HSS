@@ -1,0 +1,22 @@
+<ion-view view-title="Highlights">
+  <ion-content class="footerwrapper viewcontentforios" style="padding: 10px;">
+    <img ng-src="{{dataDetails.content_image}}" width="100%"/>
+    <div class="sliderimagedetailsheader">{{dataDetails.content_title}}</div>
+    <div class="sliderimagedetailssubheader">{{dataDetails.content_subtitle}}</div>
+    <div ng-repeat="item in dataDetailsTextcontent">
+        <p class="sliderimagedetailsDetails">{{item}}</p>
+       </div>
+
+    <ion-item class="physicianslistbg" ng-click="showMoreDetails(dataDetails.content_link_target)" style="margin-top: 10px;
+    margin-left: -10px;
+    margin-right: -10px;">
+    <div style="color: #164469;">
+         <i class="icon ion-information-circled"></i>
+       {{'Learn More'}}
+        <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+    </div>
+    </ion-item>
+
+
+  </ion-content>
+</ion-view>

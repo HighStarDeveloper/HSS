@@ -1,0 +1,10 @@
+<ion-view view-title="Social Media">
+  <ion-content class="footerwrapper">
+      <ion-list class="wrapping-list">
+          <ion-item ng-repeat="item in socialmediaitems" class="item-icon-right" ng-click="openWebView(item.url,item.name,false)">
+              <div class="physicianslistItemHeding"> {{item.name}}</div>
+              <i class="icon ion-chevron-right" style="color: #57afcf;"></i>
+          </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>

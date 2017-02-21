@@ -1,0 +1,36 @@
+<ion-view view-title="Physicians">
+  <div class="physiciansearch topsearchview" style="margin: 45px 2px;">
+    <div class="button-bar">
+      <a class="{{buttonType1}} physicianslistbg" style="border-right: 1px solid #000;font-size: 16px;" ng-click="changeTab(1)"> Body Map</a>
+      <a class= "{{buttonType2}} physicianslistbg" style="font-size: 16px;" ng-click="changeTab(2)">Listing</a>
+    </div>
+  </div>
+ <ion-content class="bodypartcontent">
+   <div ng-show="showBodyTab"  style="text-align: center;">
+     <img class="bodyslpecialtyimage" src="img/body_image.png">
+     <button class="button-clear label-right bodypartbuttonimage bodypartbutton_one" ng-click="bodyPartEvent(1)"></button>
+     <button class="button-clear label-right bodypartbuttonimage bodypartbutton_two" ng-click="bodyPartEvent(2)"></button>
+     <button class="button-clear label-right bodypartbuttonimage bodypartbutton_three" ng-click="bodyPartEvent(3)"></button>
+     <button class="button-clear label-right bodypartbuttonimage bodypartbutton_four" ng-click="bodyPartEvent(4)"></button>
+     <button class="button-clear label-right bodypartbuttonimage bodypartbutton_five" ng-click="bodyPartEvent(5)"></button>
+     <button class="button-clear label-right bodypartbuttonimage bodypartbutton_six" ng-click="bodyPartEvent(6)"></button>
+     <button class="button-clear label-right bodypartbuttonimage bodypartbutton_seven" ng-click="bodyPartEvent(7)"></button>
+     <button class="button-clear label-right bodypartbuttonimage bodypartbutton_eight" ng-click="bodyPartEvent(8)"></button>
+     <button class="button-clear label-right bodypartbuttonimage bodypartbutton_nine" ng-click="bodyPartEvent(9)"></button>
+     </div>
+    <ion-list class="wrapping-list" ng-show="!showBodyTab">
+      <ion-item ng-repeat="item in physicianslpecialtylist" class="item-icon-right" ng-click="SpecialtySelectItem(item)">
+       <div class="physicianslistItemHeding">{{item}}</div>
+       <i class="icon ion-chevron-right" style="color: #57afcf;font-size: 20px;"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <ion-footer-bar ng-show="showBodyTab" class="text-center" style="background-image: linear-gradient(transparent, transparent, transparent 50%, transparent 50%);">
+    <div class="row">
+          <div class="col">
+             <button class="button-clear bodypartfooterbuttonimage" ng-click="bodyPartAll()">
+             </button>
+  </div>
+ </div>
+</ion-footer-bar
+</ion-view>

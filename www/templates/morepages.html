@@ -1,0 +1,10 @@
+<ion-view view-title="More">
+  <ion-content class="footerwrapper">
+      <ion-list class="wrapping-list ">
+          <ion-item ng-repeat="item in morepagesitems" class="item-icon-right" ng-click="openinnerpage(item.url,item.name,false)">
+              <div class="physicianslistItemHeding"> {{item.name}}</div>
+              <i class="icon ion-chevron-right" style="color: #57afcf;font-size: 20px;"></i>
+          </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>

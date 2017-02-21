@@ -1,0 +1,11 @@
+<ion-view view-title="{{titleName}}" style="color: #164469;">
+  <ion-nav-bar>
+    <ion-nav-buttons side="left">
+      <button ng-show="{{isMenuOption}}" menu-toggle="left" class="button button-icon icon ion-navicon" style="color: #1b486c; display: block;"></button>
+      <button ng-show="{{!isMenuOption}}" class="button button-icon icon ion-chevron-left" style="color: #1b486c; display: block;" ng-click="goback()"></button>
+   </ion-nav-buttons>
+</ion-nav-bar>
+  <ion-content class="footerwrapper">
+      <iframe id="isInnerView" onload="this.width=screen.width;this.height=screen.height;" ></iframe>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,39 @@
+.ion_alpha_list_outer .list{
+	padding-right: 15px;
+}
+.ion_alpha_list_outer .item{
+	border-right: none;
+}
+/*.ion_alpha_sidebar{
+	position: fixed;
+	right: 0;
+	top: 20px;
+	height: 100%;
+	font-size: 12px;
+}*/
+.ion_alpha_sidebar{
+	    position: fixed;
+	    right: 0px;
+	    top: 160px;
+	    height: 100%;
+	    font-size: 12px;
+	    color: #1f4b6f;
+	    font-weight: bold;
+}
+
+.ion_alpha_sidebar li{
+	line-height: 1.2;
+}
+.ion_alpha_sidebar ul{
+	vertical-align: middle;
+}
+
+@media only screen and (max-device-height: 480px){
+.ion_alpha_sidebar{
+	position: fixed;
+	right: 0px;
+	top: 140px;
+	height: 100%;
+	font-size: 11px;
+ }
+}

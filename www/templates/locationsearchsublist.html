@@ -1,0 +1,16 @@
+<ion-view view-title="Location">
+  <ion-nav-buttons side="right">
+      <button class="button button-clear"  style="color: #1b486c;font-size: 16px;font-weight: 500;" ng-click="showMapView()">
+          Map
+      </button>
+  </ion-nav-buttons>
+  <ion-content>
+      <ion-list class="wrapping-list ">
+        <ion-item ng-repeat="item in itemsList" class="item-icon-right" ng-click="showDetails({{$index}})">
+         <div class="physicianslistItemHeding" style="color: #164469;">{{item.name}}</div>
+         <div class="physicianslistItemSpecialtyHeding">{{item.distance}}</div>
+         <i class="icon ion-chevron-right" style="color: #57afcf;font-size: 20px;"></i>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>

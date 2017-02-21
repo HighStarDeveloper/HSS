@@ -1,0 +1,54 @@
+<ion-view view-title="Find a Physician">
+      <ion-nav-buttons side="right">
+          <button class="button button-clear"  style="color: #1b486c;font-size: 16px;font-weight: 500;" ng-click="reset()">
+              Reset
+          </button>
+      </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+  <ion-item >
+    <div class="bar bar-header item-input-inset physiciansearch">
+          <label class="item-input-wrapper textbox-search" style="border-radius: 50px; border: 2px solid #57afcf;background: transparent;">
+              <i class="icon icon-left ion-ios-search-strong ion-ios7-search placeholder-icon" style="font-size: 28px;color: #57afcf;"></i>
+              <input type="search" placeholder="Search" style="height: 35px;padding-left: 0px; text-align: center;" ng-model="data.searchQuery" ng-enter="searchEnter(data.searchQuery)" ng-blur="searchBlurDone(data.searchQuery)"/>
+          </label>
+      </div>
+  </ion-item>
+  <ion-item class="physicianslistbg" ng-click="viewallphysician()">
+    <div style="color: #164469;">
+       <i class="icon ion-person physicianslisticon"></i>
+       <div style="margin-top: -22px;margin-left: 30px;">{{'View All Physicians'}}
+        <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+       </div>
+
+    </div>
+  </ion-item>
+  <ion-item class="physicianslistbg" ng-click="viewallphysiciansspecialty()">
+    <div style="color: #164469;">
+      <i class="icon ion-plus physicianslisticon"></i>
+        <div style="margin-top: -22px;margin-left: 30px;">{{'Browse by Specialty'}}
+       <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+       </div>
+    </div>
+  </ion-item>
+  <ion-item class="physicianslistbg" ng-click="viewallphysiciansInsurance()">
+    <div style="color: #164469;">
+      <i class="icon ion-ios-bookmarks-outline physicianslisticon"></i>
+       <div style="margin-top: -22px;margin-left: 30px;">{{'Browse by Insurance'}}
+       <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+       </div>
+    </div>
+  </ion-item>
+  <ion-item class="physicianslistbg" ng-click="viewallphysiciansLocation()">
+    <div style="color: #164469;">
+      <i class="icon ion-ios-location-outline physicianslisticon"></i>
+       <div style="margin-top: -22px;margin-left: 30px;">{{'Browse by Location'}}
+        <i class="icon icon-right ion-chevron-right physicianslisticon physicianslisticonarrow"></i>
+       </div>
+
+    </div>
+  </ion-item>
+</ion-list>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,304 @@
+/* Empty. Add your own CSS if you like */
+.bar.bar-stable .title {
+    color: #164469 !important;
+    left: 20px !important;
+    right: 0px !important;
+}
+.bar .title.title-left {
+     text-align: center !important;
+     left: 0px !important;
+     right:0px !important;
+}
+
+.platform-ios .topsearchview{
+  margin-top: 64px !important;;
+}
+
+.platform-ios .viewcontentpossition{
+     top: 145px !important;;
+}
+
+.platform-ios .viewcontentforios{
+    top: 64px !important;
+}
+.platform-ios .bodypartcontent{
+    top: 120px !important;
+}
+
+.topsearchview{
+    margin-top: 50px !important;
+}
+.viewcontentpossition {
+    top: 135px !important;
+}
+.bodypartcontent{
+    top: 100px !important;
+}
+
+  .sildemenuicon{padding-right: 20px;font-size: 25px;}
+  .sildemenuitem{font-size: 16px;color: #164469;padding-top: 0px;}
+  .sildemenuitemhref{height: 65px;padding-top: 20px;}
+  .sildemenuitemtext{margin-top: -23px;  margin-left: 25px;}
+  .sildemenutoplefticon{
+      font-size: 20px;
+      padding-left: 10px;
+      color: #164469;
+      position: absolute;
+      top: 0;
+      font-weight: 500;
+      line-height: 30px;
+     }
+
+ .sliderimagedetailsheader{
+    color: #164469 !important;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: bold;
+ }
+ .sliderimagedetailsDetails{
+    font-size: 18px;
+    padding-top: 5px;
+ }
+ .sliderimagedetailssubheader{
+   color: #0e78ce !important;
+   font-size: 16px;
+   padding: 5px;
+   font-weight: bold;
+ }
+ /*.homePageSliderImagesText{
+     position: absolute;
+     top: 50%;
+     text-align: left;
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 1;
+     color: #ffffff;
+     text-transform: uppercase;
+     width: 250px;
+ }*/
+ .homePageSliderImagesText{
+     position: absolute;
+     top: 50%;
+     text-align: left;
+     font-weight: bold;
+     font-size: 20px;
+     line-height: 1;
+     color: #ffffff;
+     text-transform: uppercase;
+     width: 250px;
+ }
+
+ .homePageSliderImagesButtonDiv{
+   position: absolute;
+   top: 72%;
+ }
+ .homePageSliderImagesButton{
+      width: 150px;
+      height: 30px;
+      border: 0px;
+      border-radius: 0px;
+      font-size: 14px;
+      color: #ffffff;
+      background-color: rgba(0, 129, 200, 0.7);
+  }
+ .footerwrapper {
+       width: 100%;
+       background: url(../img/homebg_footer.png) center bottom repeat-x;
+   }
+  .homebutton{
+        border-right: 1px solid #b3aaaa;
+        line-height: 40px;
+        border-bottom: 1px solid #b3aaaa;
+        color: #164469;
+        height: 50px;
+      }
+    .physiciansearch{
+      border: none;
+      background-image: linear-gradient(0deg, transparent, transparent 50%, transparent 50%);
+      margin-top: 10px;
+}
+.physicianslisticon{
+    font-size: 20px;
+    padding: 0px 15px 0px 10px;
+    color: #57afcf;
+  }
+  .physicianslisticonarrow{
+    float: right;
+  }
+  .physicianslistbg{
+      background-image: url(../img/physicianlistbg.png);
+    }
+    .physicianslistItemSpecialtyHeding{
+      font-size: 12px;color: #807979;
+      overflow: initial;
+      white-space: initial;
+    }
+    .physicianslistItemHeding{
+      font-size: 16px;color: #000000;
+    }
+   .physiciansdetailsHeding{
+      font-size: 18px;
+      color: #000000;
+      padding: 10px 5px 10px 0px;
+  }
+
+  .physiciansdetailsheadingdetails{
+    font-size: 14px;
+    color: #696868;
+    overflow: initial;
+    white-space: initial;
+  }
+
+  .wrapping-list .item-content, .wrapping-list .item {
+
+    overflow: initial;
+    white-space: initial;
+}
+
+.recordNotfound{
+text-align: center;
+padding-top: 20px;
+font-size: 18px;
+color: #777777;
+}
+
+.isactiveSpecialtyTab
+{
+  color: #2196F3 !important;
+}
+.refinesearch{
+height: 35px;padding-left: 0px; text-align: center;
+}
+
+.bodypartbutton_one{
+   top: 4%;
+   left: 47%;
+}
+.bodypartbutton_two{
+  margin-top: 20%;
+  left: 55%;
+}
+.bodypartbutton_three{
+  margin-top: 30%;
+  left: 47%;
+}
+.bodypartbutton_four{
+  margin-top: 40%;
+  left: 60%;
+}
+.bodypartbutton_five{
+  margin-top: 54%;
+  left: 29%;
+}
+.bodypartbutton_six{
+  margin-top: 54%;
+  left: 54%;
+}
+.bodypartbutton_seven{
+    margin-top: 82%;
+    left: 41%;
+}
+.bodypartbutton_eight{
+  margin-top: 90%;
+  left: 53%;
+}
+.bodypartbutton_nine{
+  left: 41%;
+  margin-top: 104%;
+}
+
+.bodypartbuttonimage{
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-image: url(../img/bodypartdot_icon.png) !important;
+  background-repeat: no-repeat !important;
+}
+.bodypartfooterbuttonimage{
+  width: 100px;
+  height: 27px;
+  background-image: url(../img/bodypartfooter.png) !important;
+  background-repeat: no-repeat !important;
+  margin-top: -10px;
+}
+
+.bodyslpecialtyimage{
+  height: auto;
+  width: 48%;
+  padding-top: 10px;
+}
+@media only screen and (min-device-height: 800px){
+  .homePageSliderImagesText{
+      position: absolute;
+      top: 62%;
+      text-align: left;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 1;
+      color: #ffffff;
+      text-transform: uppercase;
+      width: 450px;
+  }
+  .homePageSliderImagesButtonDiv{
+    top: 70%;
+  }
+}
+/**iPhone 4s**/
+@media only screen and (min-device-width: 320px) and (max-device-height: 480px){
+  .bodyslpecialtyimage{
+    width: 44%;
+  }
+  .bodypartbutton_one{
+     top: 12px;
+     left: 46%;
+  }
+  .bodypartbutton_two{
+    margin-top: 20%;
+    left: 54%;
+  }
+  .bodypartbutton_three{
+    margin-top: 30%;
+    left: 46%;
+  }
+  .bodypartbutton_four{
+    margin-top: 37%;
+    left: 59%;
+  }
+  .bodypartbutton_five{
+    margin-top: 48%;
+    left: 30%;
+  }
+  .bodypartbutton_six{
+    margin-top: 50%;
+    left: 54%;
+  }
+  .bodypartbutton_seven{
+      margin-top: 73%;
+      left: 42%;
+  }
+  .bodypartbutton_eight{
+    margin-top: 83%;
+    left: 52%;
+  }
+  .bodypartbutton_nine{
+    left: 42%;
+    margin-top: 94%;
+  }
+
+  .homePageSliderImagesText {
+    position: absolute;
+    top: 40%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 200px;
+}
+.homePageSliderImagesButtonDiv {
+    position: absolute;
+    top: 70%;
+}
+}

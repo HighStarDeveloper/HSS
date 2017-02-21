@@ -1,0 +1,19 @@
+<ion-view view-title="Search Results">
+    <div class="physiciansearch topsearchview">
+          <div class="physicianslistItemHeding text-center" style="color: #164469;"> {{'All Physicians'}}</div>
+          <div class="item-input-inset">
+          <label class="item-input-wrapper textbox-search" style="border-radius: 50px; border: 2px solid #57afcf;background: transparent;">
+              <i class="icon icon-left ion-ios-search-strong ion-ios7-search placeholder-icon" style="font-size: 28px;color: #57afcf;"></i>
+              <input type="search" placeholder="Refine Search" ng-enter="customSeacrh(searchBy.text)" ng-keyup="customSeacrh(searchBy.text)" ng-model="searchBy.text" class="refinesearch">
+          </label>
+        </div>
+      </div>
+  <ion-content class="viewcontentpossition" scroll="false">
+    <p ng-show="!items.length" class="recordNotfound">No physicians found</p>
+    <ion-alpha-scroll ng-model="physicians_items" key="LastName">
+      <div class="physicianslistItemHeding"> {{item.FullName}}</div>
+      <div class="physicianslistItemSpecialtyHeding">{{item.Specialty}}</div>
+      <i class="icon ion-chevron-right" style="color: #57afcf;font-size: 20px;"></i>
+    </ion-alpha-scroll>
+  </ion-content>
+</ion-view>

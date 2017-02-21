@@ -1,0 +1,10 @@
+<ion-view view-title="Physicians" style="left: 0px; right:0px;">
+  <ion-content>
+    <ion-list class="wrapping-list">
+      <ion-item ng-repeat="item in physicianslocationlist" class="item-icon-right" ng-click="LocationSelectItem(item)">
+       <div class="physicianslistItemHeding">{{item}}</div>
+       <i class="icon ion-chevron-right" style="color: #57afcf;font-size: 20px;"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
